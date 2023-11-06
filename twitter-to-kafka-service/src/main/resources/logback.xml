@@ -5,4 +5,9 @@
 
     <include resource="logback-common.xml"/>
 
+    <logger name="com.microservices.demo" level="debug" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
 </configuration>
